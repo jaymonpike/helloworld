@@ -18,25 +18,17 @@ int main(){
             cout << "Number was not a positive integer or was not a multiple of 3" << endl;
         }
         else {
-            // if (i = 0) { // this is so that the minimum doesn't stay zero the entire time, the first number entered would technically be the min.
-            //     min = x;
-            //     i++;
-            //     total = total + x;
-            // }
 
             if (x < min) {
                 min = x;
                 i++;
                 total = total + x;
-                // average = total / i;
-
-
             }
+
             else if (x > max) {
                 max = x;
                 i++;
                 total = total + x;
-                // average = total / i;
             }
 
         }
