@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip> // to make it so that i can use setw()
-
 using namespace std;
+
 int main(){
     double total = 0.00; //defining each variable value so that they can be called and worked with from a clean slate.
     int x;
@@ -18,21 +18,17 @@ int main(){
             cout << "Number was not a positive integer or was not a multiple of 3" << endl;
         }
         else {
-
             if (x < min) {
                 min = x;
                 i++;
                 total = total + x;
             }
-
             else if (x > max) {
                 max = x;
                 i++;
                 total = total + x;
             }
-
         }
-
     } while(i < 5);
 
 cout << "Count" << setw(9) << "Minimum" << setw(9) << "Maximum" << setw(7) << "Total" << setw(9) << "Average" << endl;
